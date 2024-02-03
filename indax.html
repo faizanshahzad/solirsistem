@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="sun">
+    <div class="p p1">
+      <div class="m"></div>
+    </div>
+    <div class="p p2">
+      <div class="m m1"></div>
+    </div>
+    <div class="p p3">
+      <div class="m m1">
+        <div class="m"></div>
+      </div>
+    </div>
+    <div class="p p4">
+      <div class="m m1"></div>
+      <div class="m m2"></div>
+      <div class="m m3"></div>
+    </div>
+    <div class="p p5"></div>
+  </div>
+  <div class="note">
+    <!-- <div class="text">No Firefox again, sorry. Animating @property --a</div> -->
+    <div class="text"><a href="https://codepen.io/ghaste/pen/KKGzBWx" target="_blank"></a></div>
+  </div>
+  <svg class="stars" xmlns="http://www.w3.org/2000/svg">
+    <filter id="starf">
+      <feturbulence basefrequency="0.2" seed="4"></feturbulence>
+      <fecolormatrix values="0 0 0 9 -4                           0 0 0 9 -4                          0 0 0 9 -4                          0 0 0 0 1"></fecolormatrix>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#starf)"></rect>
+  </svg>
+    <script src="./script.js"></script>
+</body>
+</html>
